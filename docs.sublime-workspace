@@ -1,0 +1,444 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"center",
+				"flex-center"
+			],
+			[
+				"text",
+				"text-bottom"
+			],
+			[
+				"col",
+				"column-reverse"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"col-",
+				"col-md-offset-1"
+			],
+			[
+				"top",
+				"padding-top"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"carousel-",
+				"carousel-inner"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"style",
+				"stylesheet"
+			],
+			[
+				"mess",
+				"messages"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 539.0
+	},
+	"console":
+	{
+		"height": 51.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/spms/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/spms/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/post.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/.jshintrc",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/apps.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/blog_alternative/blog.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/blogposts/post.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/missao.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/docs.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/blank.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/documentacao.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/assets/css/style.css",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/index.html",
+		"/Users/spms/Documents/animation.svg",
+		"/Users/spms/Documents/sketchpack.json",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/opensource.html",
+		"/Users/spms/Desktop/div.sublime-snippet",
+		"/Users/spms/Desktop/MySNS Community  - cópia/package.json",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/assets/css/accordion.css",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/blank-page.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/assets/canvas.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/Gruntfile.js",
+		"/Users/spms/Desktop/Documentation/MYSNS.md",
+		"/Users/spms/Desktop/Documentation/_book/index.html",
+		"/Users/spms/Desktop/Documentation/SUMMARY.md",
+		"/Users/spms/Desktop/us/authapp/src/index.html",
+		"/Users/spms/Desktop/us/authapp/README.md",
+		"/Users/spms/Desktop/mysns blog final/blog/index.html",
+		"/Users/spms/Desktop/aurelia/holo-alfa-master/_config_dev.yml",
+		"/Users/spms/Desktop/aurelia/holo-alfa/_config_dev.yml",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/developerArea/index.html",
+		"/Users/spms/Desktop/final/blog/feed.xml",
+		"/Users/spms/Desktop/final/blog_jekyll/_includes/navigation.html",
+		"/Users/spms/Desktop/final/blog_jekyll/_includes/header.html",
+		"/Users/spms/Desktop/final/blog_jekyll/_includes/head.html",
+		"/Users/spms/Desktop/final/blog_jekyll/_includes/footer.html",
+		"/Users/spms/Desktop/final/blog_jekyll/_includes/pagination.html",
+		"/Users/spms/Desktop/final/blog_jekyll/index.html",
+		"/Users/spms/Desktop/final/blog_jekyll/Gemfile",
+		"/Users/spms/Desktop/final/blog_jekyll/Gemfile.lock",
+		"/Users/spms/Desktop/final/blog_jekyll/js/fitvids.js",
+		"/Users/spms/Desktop/final/blog_jekyll/README.md",
+		"/Users/spms/Desktop/final/blog_jekyll/sitemap.xml",
+		"/Users/spms/Desktop/final/blog_jekyll/_layouts/page.html",
+		"/Users/spms/Desktop/final/blog_jekyll/contact.html",
+		"/Users/spms/Desktop/final/blog_jekyll/thanks.md",
+		"/Users/spms/Desktop/final/blog_jekyll/_layouts/default.html",
+		"/Users/spms/Desktop/final/blog_jekyll/_config.yml",
+		"/Users/spms/Desktop/_site/index.html",
+		"/Users/spms/Desktop/teste/README.md",
+		"/Users/spms/Desktop/teste/_book/index.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/developer/gitbook/style.css",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/developer/index.html",
+		"/Users/spms/Desktop/holo-alfa-master/_config_dev.yml",
+		"/Users/spms/Desktop/holo-alfa-master/_includes/navigation.html",
+		"/Users/spms/Desktop/holo-alfa-master/index.html",
+		"/Users/spms/Desktop/holo-alfa-master/_layouts/post.html",
+		"/Users/spms/Desktop/aurelia/holo-alfa/_config.yml",
+		"/Users/spms/Desktop/aurelia/blog/_config_dev.yml",
+		"/Users/spms/Desktop/aurelia/blog/thanks.md",
+		"/Users/spms/Desktop/aurelia/blog/Gemfile.lock",
+		"/Users/spms/Desktop/aurelia/holo-alfa/css/reset.css",
+		"/Users/spms/Desktop/aurelia/holo-alfa/css/pygments.css",
+		"/Users/spms/Desktop/aurelia/holo-alfa/_posts/2017-02-15-welcome-to-jekyll.md",
+		"/Users/spms/Desktop/aurelia/holo-alfa/_posts/2017-02-24-blog-post-2.md",
+		"/Users/spms/Desktop/aurelia/holo-alfa/_posts/2017-02-21-blog-post-1.md",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/blog.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/faq.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/canvas.html",
+		"/Users/spms/node_modules/jspm/docs/book.json",
+		"/Users/spms/Desktop/teste/mysns/dependencies.md",
+		"/Users/spms/Desktop/teste/_book/search_index.json",
+		"/Users/spms/Desktop/teste/SUMMARY.md",
+		"/Users/spms/Desktop/teste/dependencies.md",
+		"/Users/spms/Desktop/teste/methods.md",
+		"/Users/spms/Desktop/docbase/boilerplate_docs/v1/getting-started/configure.md",
+		"/Users/spms/Desktop/pasta sem nome/index.html",
+		"/Users/spms/Desktop/docbase/styles/theme.css",
+		"/Users/spms/Desktop/docbase/search-index.json",
+		"/Users/spms/Desktop/docbase/index.html",
+		"/Users/spms/Desktop/docbase/html/navbar.html",
+		"/Users/spms/Desktop/docbase/html/main.html",
+		"/Users/spms/Desktop/static/Configuration/index.html",
+		"/Users/spms/Desktop/composer/test2/global.json",
+		"/Users/spms/Desktop/static/Features/Auto_Syntax_Highlight.html",
+		"/Users/spms/Desktop/composer/test2/docs/_index.md",
+		"/Users/spms/Desktop/composer/test2/docs/config.json",
+		"/Users/spms/Desktop/composer/test2/static/Examples/index.html",
+		"/Users/spms/Desktop/composer/documentation/Gruntfile.js",
+		"/Users/spms/Desktop/Gruntfile.js",
+		"/Users/spms/Desktop/gatsby/lumen/pages/_template.jsx",
+		"/Users/spms/Desktop/gatsby/lumen/package.json",
+		"/Users/spms/Desktop/gatsby/lumen/html.js",
+		"/Users/spms/Desktop/gatsby/lumen/pages/index.jsx",
+		"/Users/spms/Desktop/gatsby/lumen/config.toml",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/config.toml",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/html.js",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/wrappers/md.jsx",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/pages/_template.jsx",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/pages/docs/conclusion/index.md",
+		"/Users/spms/Desktop/gatsby/gatsby-documentation-site/pages/docs/_template.jsx",
+		"/Users/spms/Desktop/profile.component.html",
+		"/Users/spms/Desktop/profile.component.ts",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/app/account/login/index.html",
+		"/Users/spms/Desktop/us/proj/src/index.html",
+		"/Users/spms/Desktop/02-Custom-Login/index.html",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/01-Login/app.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/01-Login/index.html",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/04-User-Profile/auth0-variables.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/04-User-Profile/app.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/04-User-Profile/index.html",
+		"/Users/spms/Desktop/02-Custom-Login/app.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/README.md",
+		"/Users/spms/Desktop/02-Custom-Login/assets/css/font-awesome.css",
+		"/Users/spms/Desktop/02-Custom-Login/assets/css/docs.css",
+		"/Users/spms/Desktop/02-Custom-Login/css/font-awesome.css",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/09-MFA/index.html",
+		"/Users/spms/Desktop/MySNS Community  - cópia/client/app/account/login/login.html",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/app.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/.gitignore",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/LICENSE",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/index.html",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/auth0-variables.js.example",
+		"/Users/spms/Desktop/01-login/app.js",
+		"/Users/spms/Desktop/auth0-javascript-spa-master/02-Custom-Login/auth0-variables.js",
+		"/Users/spms/Desktop/auth0.js-master/example/index.html",
+		"/Users/spms/Desktop/01-login/index.html",
+		"/Users/spms/Desktop/01-login/auth0-variables.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"documentação",
+			"documentaçao",
+			" >",
+			"\">",
+			"main",
+			"a {",
+			"00f0ff",
+			"holo",
+			"photo.jpg",
+			"login",
+			"logout",
+			"google",
+			"Sign in with ",
+			"var querystring",
+			"react-tap-event-plugin´",
+			"mongo",
+			"Cancel",
+			"cancel",
+			"recover passo",
+			"Trouble signing in?",
+			"trouble",
+			"redirectUrl",
+			"redirect",
+			"sign-in-with-redirect",
+			"sign-in-with-pop",
+			"sign-in-with-redirect",
+			"displayName",
+			"user.displayName",
+			"popup",
+			"signIn",
+			"signIn ",
+			"google",
+			"initFirebase",
+			"handleUnauthorized",
+			"Question.find()",
+			"Question.find().sort({createdAt: -1}).limit(20).execAsync()",
+			"href=\"./",
+			"href=\"",
+			"class=\"green\">",
+			"id=\"resp\"",
+			"caro",
+			"border-width",
+			"border",
+			"outline",
+			"grey",
+			"navbar",
+			"ng-tags-input",
+			"\"platideias/",
+			"\"bower_components/",
+			"\"components/",
+			"\"app/",
+			"title",
+			".topic",
+			"title"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Iniciar Sessão com ",
+			"Iniciar Sessão com",
+			"href=\"../",
+			"href=\"./",
+			"class=\"resp green\">",
+			"",
+			"\"",
+			"\"platideias/bower_components/",
+			"\"platideias/components/",
+			"\"platideias/app/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "docs.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/MySNS Community  - cópia/client/documentacao.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 93.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
