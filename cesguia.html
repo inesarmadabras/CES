@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My SNS Community</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    .desc {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .title {
+        text-shadow: 1px 2px #D1D1D1;
+        margin-bottom: 5%;
+    }
+    
+    .black {
+        color: black;
+    }
+    
+    .top-center {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .blueces {
+        color: #327af3;
+    }
+    
+    .fa {
+        color: #327af3;
+        text-shadow: 1px 2px #BDBDBD;
+        margin-bottom: 5%;
+    }
+    
+    .img-shadow {
+        -webkit-filter: drop-shadow(5px 5px 5px #BDBDBD);
+        filter: drop-shadow(5px 5px 5px #BDBDBD);
+    }
+    </style>
+</head>
+
+<body>
+    <!-- LOAD NAVBAR -->
+    <div id="navs"></div>
+    <!--MAIN CONTENT-->
+    <div id="max-container">
+        <div id="page1" class="container top-center">
+            <div class="top-center">
+                <img class="img-fluid img-shadow center" src="assets/images/ces-logo.png" width="20%">
+                <h3><b>MySNS Carteira</b></h3>
+                <h2>Guia de Utilização</h2>
+                <p>Aprenda a utilizar correctamente a MySNS Carteira</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="blueces fa fa-5x fa-sign-in" aria-hidden="true"></i>
+                    <h2><b>Iniciar Sessão</b></h2>
+                    <p>Como iniciar sessão na carteira electrónica da saúde?</p>
+                    <a href="">
+                        <p>Saber mais <i class="fa-1x fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <i class="blueces fa fa-5x fa-id-card-o" aria-hidden="true"></i>
+                    <h2><b>Adicionar Cartões</b></h2>
+                    <p>Quais os cartões disponiveis? Como adicionar?</p>
+                    <a href="">
+                        <p>Saber mais <i class="fa-1x fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="blueces fa fa-5x fa-sign-out fa-rotate-180 " aria-hidden="true"></i>
+                    <h2><b>Terminar Sessão</b></h2>
+                    <p>Como terminar sessão na carteira electrónica da saúde?</p>
+                    <a href="">
+                        <p>Saber mais <i class="fa-1x fa fa-arrow-circle-right " aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <i class="blueces fa fa-5x fa-trash-o" aria-hidden="true"></i>
+                    <h2><b>Remover Cartões</b></h2>
+                    <p>Como remover cartões?</p>
+                    <a href="">
+                        <p>Saber mais <i class="fa-1x fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="blueces fa fa-5x fa-heartbeat" aria-hidden="true"></i>
+                    <h2><b>eGuia de Tratamento</b></h2>
+                    <p>Como utilizar a eGuia de Tratamento? Como consultar e utilizar nas farmácias?</p>
+                    <a href="">
+                        <p>Saber mais <i class="fa-1x fa fa-arrow-circle-right" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- LOAD FOOTER -->
+    <div id="footer"></div>
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script>
+    $("#navs").load("assets/canvas.html nav");
+    </script>
+    <script>
+    $("#footer").load("assets/canvas.html #footer");
+    </script>
+</body>
+
+</html>
