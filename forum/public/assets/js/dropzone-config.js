@@ -53,4 +53,4 @@ Dropzone.options.realDropzone = {
         photo_counter++;
         $("#photoCounter").text( "(" + photo_counter + ")");
     }
-}
+};

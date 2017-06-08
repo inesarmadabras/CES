@@ -78,9 +78,8 @@ var jbImagesDialog = {
 		function close() {
 			tinymce.EditorManager.activeEditor.windowManager.close(window);
 			tinymce = tinyMCE = t.editor = t.params = t.dom = t.dom.doc = null; // Cleanup
-		};
-
-		if (tinymce.isOpera)
+        }
+        if (tinymce.isOpera)
 			this.getWin().setTimeout(close, 0);
 		else
 			close();
