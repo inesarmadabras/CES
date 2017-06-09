@@ -203,7 +203,8 @@
             if($.browser.mobile) this.$el.addClass('mobile');
 
             // Init options
-            this.options = $.extend(true, {}, this.getDefaultOptions(), options);
+            this.options = $.extend(true, {}, this.getDefaultOptions(), options);;
+
             // Read-only mode
             if(this.options.readOnly) this.$el.addClass('read-only');
 
@@ -298,11 +299,11 @@
                     self.createComment(commentModel);
                 });
                 spinner.remove();
-            };
+            }
 
             var error = function() {
                 spinner.remove();
-            };
+            }
 
             this.options.getComments(success, error);
         },

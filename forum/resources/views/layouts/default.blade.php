@@ -25,6 +25,7 @@
 
 
     <link rel="stylesheet" href="{{ URL::asset('assetssns/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
 
@@ -38,6 +39,11 @@
 
 <body>
     <div id="navs"></div>
+            <nav class="navbar navbar-inverse">
+                <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> Cidadão e Profissional de Saúde
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i> Plataforma de Ideias
+                </h1>
+            </nav>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default">
