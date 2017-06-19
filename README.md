@@ -9,7 +9,8 @@ Made with Laravel
 * `php artisan serve`
 
 ### RoadMap:
-* MySNS Selecção
-* Ajuda
-* Área Programador
+* Tradução (i18next)
+* Login c/ redes sociais (Socialite)
+* Ajuda (animações svg)
+* Área Programador (Documentação, GitHub)
 * Blog
