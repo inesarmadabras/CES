@@ -2331,6 +2331,12 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
+    $.getScript('funwithflags.js', function()
+    {
+        // script is now loaded and executed.
+        // put your dependent JS here.
+    });
+
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
   // ============================================================
 
@@ -2378,3 +2384,10 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+
+
+
+
+

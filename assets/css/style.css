@@ -265,6 +265,10 @@ p {
     text-align: justify;
 }
 
+li {
+    list-style-type: none;
+}
+
 
 .logotore {
     max-width: 140px;
@@ -317,4 +321,202 @@ p {
 .img-shadow {
     -webkit-filter: drop-shadow(5px 5px 5px #BDBDBD);
     filter: drop-shadow(5px 5px 5px #BDBDBD);
+}
+
+
+/*Country selector */
+/*More FUN WITH FLAGS!*/
+
+
+/* STYLE OF WIDGET */
+.country-selector {
+    z-Index : 9999;
+    text-align: left;
+    position: relative;
+    display : inline-block;
+    width: auto;
+}
+.wg-drop.country-selector {
+    background-color : white;
+}
+.country-selector a {
+    padding: 0 10px;
+    outline : none;
+    text-decoration: none;
+    float: none!important;
+}
+.country-selector a:focus {
+    outline : none;
+}
+.wg-drop.country-selector a {
+    display: block;
+    height: 37px;
+    line-height: 36px;
+    color : black;
+    font-size: 13px;
+    padding : 0 10px;
+}
+.wg-drop.country-selector :not(.wgcurrent) a {
+    width : 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wg-list.country-selector a:hover {
+    text-decoration : underline;
+    color : #359c88;
+}
+
+.wg-default {
+    position : fixed;
+    bottom : 0px;
+    right : 20px;
+}
+.wg-default.wg-list {
+    margin-bottom : 7px;
+}
+.wg-default.wg-list a {
+    color : black;
+}
+.wg-drop.country-selector .wgcurrent a{
+    padding-right: 40px;
+}
+.wg-list.country-selector .wgcurrent a{
+    text-decoration: underline;
+}
+.wg-list.country-selector .wgcurrent{
+    display : inline-block;
+    vertical-align: middle;
+}
+
+.country-selector ul {
+    padding: 0px;
+    z-index: 1010;
+    list-style: none;
+    margin: 0;
+}
+.wg-drop.country-selector .wgcurrent {
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    box-shadow: 2px 2px 2px #BDBDBD;
+
+
+}
+.wg-drop.country-selector ul {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ebeef0;
+    background: white ;
+    left : 0;
+    top : initial;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wg-drop.country-selector:not(.closed) ul {
+    display:block;
+    background-color: white;
+}
+
+.country-selector li {
+    margin : 0px;
+    padding : 0px;
+}
+.wg-list.country-selector li {
+    display : inline-block;
+    margin: 2px 0px;
+    vertical-align: middle;
+}
+.wg-drop.country-selector li {
+    width : 100%;
+}
+
+.wg-drop.country-selector .wgcurrent:after {
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    width: 13px;
+    height: 7px;
+    image-rendering: pixelated;
+    background-image : url('../images/wgarrowdown.png');
+    background-repeat : no-repeat;
+    content: '';
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.wg-list.country-selector ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wg-drop.country-selector.closed ul {
+    display: none;
+}
+.wg-drop.country-selector.closed .wgcurrent:after {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.wg-drop.weg-openup ul {
+    bottom : 38px;
+}
+.wg-drop.weg-openup .wgcurrent:after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.wg-drop.country-selector:not(.closed) a:hover {
+    color: #359c88;
+}
+
+
+.wg-flags a:before {
+    content: "";
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -1px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* flags style */
+
+.wg-flags.flag-2 a:before {
+    background: url("https://d3m55resnjf8ja.cloudfront.net/square_flags_comp.png");
+    border-radius: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.wg-li.flag-2.en a:before { background-position: -312px 0; }
+.wg-li.flag-2.es a:before { background-position: -96px 0; }
+.wg-li.flag-2.pt a:before { background-position: -528px 0; }
+.wg-li.flag-2.fr a:before { background-position: -2304px 0; }
+
+
+.wg-flags.flag-3 a:before {
+    background: url("https://d3m55resnjf8ja.cloudfront.net/circular_flags_comp.png");
+    border-radius: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.wg-li.flag-3.en a:before { background-position: -5592px 0; }
+.wg-li.flag-3.pt a:before { background-position: -5640px 0; }
+.wg-li.flag-3.fr a:before { background-position: -4920px 0; }
+.
+aside{
+    display: block;
+
 }
