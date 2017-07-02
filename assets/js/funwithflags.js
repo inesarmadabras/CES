@@ -8,3 +8,16 @@ function openClose(link){link.className=(link.className.indexOf("country-selecto
 return!1}
 /*magic!*/
 function getOffset(element){var top=0,left=0;do{top+=element.offsetTop||0;left+=element.offsetLeft||0;element=element.offsetParent}while(element);return{top:top,left:left}}
+
+
+/*NAVBAR - Dropdown submenu */
+
+
+$(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+});
+

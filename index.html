@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <link rel="stylesheet" href="/assets/css/carousel.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
+
+<style>
+    .mobile-only {
+        display: none;
+    }
+
+    
+    @media ( max-width: 500px) {
+        .mobile-only {
+            display: inline;
+        }
+    }
+
+</style>
 </head>
 
 <body>
@@ -111,11 +125,10 @@
 <!--LOAD FOOTER-->
 
 <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/assets/js/carousel.min.js"></script>
-<!-- Material Design Bootstrap -->
-<script type="text/javascript" src="/assets/js/mdb.min.js"></script>
 <script type="text/javascript" src="/assets/js/funwithflags.js"></script>
+
 
 <script>
     $("#navs").load("/assets/canvas.html nav");
@@ -123,8 +136,6 @@
 <script>
     $("#footer").load("/assets/canvas.html #footer");
 </script>
-
-
 
 
 </body>
