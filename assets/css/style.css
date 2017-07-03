@@ -336,6 +336,7 @@ li {
 }
 
 
+
 @media ( max-width: 500px) {
     .mobile-except {
         visibility: hidden;
@@ -549,4 +550,35 @@ aside{
     top: 0;
     left: 100%;
     margin-top: -1px;
+}
+
+/*Documentação style*/
+.center {
+    text-align: center;
+
+    margin: auto;
+
+}
+
+.zoom {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+    /**adjust scale to desired size,
+    add browser prefixes**/
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    position:relative;
+    z-index:100;
 }
