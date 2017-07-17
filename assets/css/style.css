@@ -204,7 +204,7 @@ blockquote {
 .well {
     background-color: rgb(102, 181, 169);
     /*,0.8*/
-    
+
     color: white;
 }
 .full-post {
@@ -214,7 +214,7 @@ blockquote {
 
 /*squares - index*/
 
-            
+
 .flex-center{
     text-align: center;
     vertical-align: center;
@@ -222,36 +222,36 @@ blockquote {
 
 .main-img{
     max-height: 350px;
- 
+
 }
 
 .btn {
    background-color: rgba(255,255,255,0.9);
- 
+
 }
 
 .mask{
    display: flex;
    flex-direction:  column;
    justify-content: space-between;
- 
+
 }
 
-.mask .btn { 
- 
+.mask .btn {
+
    margin: 0 20% 15% 20%;
- 
+
 }
 
 .col-sm-12 {
    padding-top: 20px;
- 
- 
+
+
 }
 
 .blacktext {
-   color: black; 
- 
+   color: black;
+
 }
 .app {
     border: 1px solid #C7C9C9;
@@ -598,7 +598,7 @@ aside{
 }
 
 #carouselExampleControls img {
-    border: 3px solid black;
+
     border-radius: 20px;
 }
 
