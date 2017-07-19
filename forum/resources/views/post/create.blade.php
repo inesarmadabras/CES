@@ -5,9 +5,9 @@
     <script src="{{ URL::asset('assets/js/typeahead.bundle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
 
-        <link rel="stylesheet" href="{{ URL::asset('/css/normalize.min.css') }}">
-                <link rel="stylesheet" href="{{ URL::asset('/css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('assetssns/css/normalize.min.css') }}">
+                <link rel="stylesheet" href="{{ URL::asset('assetssns/css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assetssns/css/bootstrap.min.css') }}">
 
 
     <script type="text/javascript">
@@ -109,10 +109,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script>
-        $("#navs").load("/canvas.html nav");
+        $("#navs").load("assetssns/canvas.html nav");
     </script>
     <script>
-        $("#footer").load("/canvas.html #footer");
+        $("#footer").load("assetssns/canvas.html #footer");
     </script>
 
 
