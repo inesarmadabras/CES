@@ -14,13 +14,13 @@
     <script src="{{ URL::asset('/assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.min.css ') }}">
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css ') }}">
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap-editable.css ') }}">
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/jquery.upvote.css ') }}">
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/sweetalert.css ') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css ') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap-editable.css ') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/jquery.upvote.css ') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/sweetalert.css ') }}">
     <link rel="stylesheet" href="{{ URL::asset('eastgate/comment/css/comment.css ') }}">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{ URL::asset('assets/css/sticky-footer-navbar.css ') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/sticky-footer-navbar.css ') }}">
     <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico " type="image/x-icon ') }}">
     <link rel="stylesheet" href="{{ URL::asset('/assets/css/normalize.min.css ') }}">
     <link rel="stylesheet" href="{{ URL::asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ') }}">
@@ -30,8 +30,8 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="{{ URL::asset('assets/js/html5shiv.min.js ') }}"></script>
-    <script src="{{ URL::asset('assets/js/respond.min.js ') }}"></script>
+    <script src="{{ URL::asset('/assets/js/html5shiv.min.js ') }}"></script>
+    <script src="{{ URL::asset('/assets/js/respond.min.js ') }}"></script>
     <![endif]-->
 </head>
 
