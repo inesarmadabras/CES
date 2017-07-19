@@ -14,7 +14,7 @@ serve
 * `php artisan serve`
 
 ### RoadMap:
+* Ajuda (animações svg) - eGuia de Tratamento
 * Login c/ redes sociais (Socialite)
-* Ajuda (animações svg)
 * Área Programador (Documentação, GitHub)
-* Blog
+* corrigir canvas
