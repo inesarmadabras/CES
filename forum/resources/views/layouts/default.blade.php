@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Plataforma de Ideias</title>
-    <script src="{{ URL::asset(' /assets/js/jquery.min.js ') }}"></script>
+    <script src="{{ URL::asset('/assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.min.css ') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css ') }}">
