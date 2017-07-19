@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,125 +12,23 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
 <body>
 <!-- LOAD NAVBAR -->
 <div id="navs"></div>
 <nav class="navbar navbar-inverse">
-    <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> StyleGuides</h1></nav>
+    <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> StyleGuides</h1>
+</nav>
 <!--  <nav class="navbar navbar-inverse"> <h1 id="titlebar"></h1></nav>-->
 <br>
 <br>
 <!-- Sidebar -->
-<section id="max-container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="w3-sidebar w3-light-grey w3-bar-block">
-                <h3 class="w3-bar-item">Git</h3>
-                <a href="#G1" class="w3-bar-item w3-button">Submeter um issue / bug</a>
-                <a href="#G2" class="w3-bar-item w3-button">Submeter um Pull Request (PR)</a>
-                <a href="#G3" class="w3-bar-item w3-button">Commit Message Guidelines</a>
-                <a href="#G1" class="w3-bar-item w3-button">Submeter um issue / bug</a>
-                <a href="#G2" class="w3-bar-item w3-button">Submeter um Pull Request (PR)</a>
-                <a href="#G3" class="w3-bar-item w3-button">Commit Message Guidelines</a>
-            </div>
-        </div>
-        <div class="col-md-8">
-
-            <div id="page1" class="">
-
-                <h2 id="gitgit">Git</h2>
-                <h3 id="G1">1. Submeter um issue / bug </h3>
-                <p>Ao submeter um <em>issue</em> deverá indicar as seguintes informações:</p>
-                <ul>
-                    <li>Descrição do erro</li>
-                    <li>Caso de uso - o que estava a fazer quando ocorreu o erro</li>
-                    <li>Versão da aplicação </li>
-                    <li>Sistema Operativo</li>
-                    <li>Screenshots (se aplicável)</li>
-                    <li>Related Issues - se estiver relacionado com outros <em>issues</em> abertos</li>
-                    <li>Sugerir uma correcção - se souber corrigir o <em>bug</em> </li>
-                </ul>
-                <h3 id="G2">2. Submeter um Pull Request (PR)</h3>
-                <p>Antes de submeter um pull request, considere as seguintes <em>guidelines</em>:</p>
-                <ul>
-                    <li>
-                        <p>Make your changes in a new git branch:</p>
-                        <p><code>shell git checkout -b my-fix-branch master</code></p>
-                    </li>
-                    <li>
-                        <p>Create your patch, <strong>including appropriate test cases</strong>.</p>
-                    </li>
-                    <li>
-                        <p>Follow our Coding Rules.</p>
-                    </li>
-                    <li>
-                        <p>Commit your changes using a descriptive commit message.
-                            <code>shell
-                                git commit -a
-                            </code> Note: the optional commit <code>-a</code> command line option will automatically "add" and "rm" edited files.</p>
-                    </li>
-                </ul>
-                <h3 id="G3">3. Commit Message Guidelines</h3>
-                <p>Temos regras muito precisas sobre como nossas mensagens de commit git podem ser formatadas. Isso leva a <em>* mensagens mais Legíveis *</em> que são fáceis de seguir ao olhar através da história do projeto e gerar <em>change logs</em>
-                </p>
-                <h4 id="commitmessage">Commit Message - Formato</h4>
-                <p>Cada commit message tem os seguintes elementos: <strong>header</strong>, <strong>body</strong> e <strong>footer</strong>.
-                    <br /> Por sua vez, um <strong>header</strong> é composto por <strong>type</strong>, <strong>scope</strong> e <strong>subject</strong>:</p>
-                <pre><code class="  language- ">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
-                            &lt;BLANK LINE&gt;
-                            &lt;body&gt;
-                            &lt;BLANK LINE&gt;
-                            &lt;footer&gt;</code>
-                    </pre>
-                <p>O <strong>header</strong> é obrigatório, mas a <strong>scope</strong> do header é opcional.</p>
-                <p>Cada linhha da commit message não deve ter mais de <strong>100 caracteres</strong>. Assim a mensagem será mais facil de ler nas mais variadas git tools.</p>
-                <h4 id="revert">Revert</h4>
-                <p>Se um commit reverte um commit anterior, deve começar com <code>revert:</code>, seguido do <em>header</em> do commit revertido. O <em>body</em> deverá ter a mensagem <code>This reverts commit &lt;hash&gt;.</code>. O <em>hash</em> é o SHA do commit que será revertido.</p>
-                <h4 id="type">Type</h4>
-                <p>Deve ser um dos seguintes:</p>
-                <ul>
-                    <li><strong>feat</strong>: A new feature</li>
-                    <li><strong>fix</strong>: A bug fix</li>
-                    <li><strong>docs</strong>: Documentation only changes</li>
-                    <li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)</li>
-                    <li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
-                    <li><strong>perf</strong>: A code change that improves performance</li>
-                    <li><strong>test</strong>: Adding missing tests or correcting existing tests</li>
-                    <li><strong>build</strong>: Changes that affect the build system, CI configuration or external dependencies(example scopes: webpack, tns, npm)</li>
-                    <li><strong>chore</strong>: Other changes that don't modify <code>src</code> or <code>test</code> files</li>
-                </ul>
-                <h4 id="scope">Scope</h4>
-                <p>O <em>scope</em> pode ser qualquer sitio especifico do commit change. (ex: <code>pin-page</code>, <code>card</code>, etc. )</p>
-                <h4 id="subject">Subject</h4>
-                <p>O <em>subject</em> é uma descrição suscinta da alteração.</p>
-                <ul>
-                    <li>Uso do imperativo: "change" em vez de "changed" ou "changes"</li>
-                    <li>Sem letra maiuscula no inicio</li>
-                    <li>Sem pontos finais (.) no fim</li>
-                </ul>
-                <h4 id="body">Body</h4>
-                <ul>
-                    <li>Uso do imperativo (tal como em <em>subject</em>)</li>
-                    <li>Deve incluir a motivação da mudança e as alterações em relação à versão anterior Just as in the <strong>subject</strong>, use the imperative, present tense: "change" not "changed" nor "changes".</li>
-                </ul>
-                <h4 id="footergit">Footer</h4>
-                <p>Deverá conter informação sobre <strong>Breaking Changes</strong> e também a referência para o <em>issue</em> que o commit fecha.</p>
-                <p><strong>Breaking Changes</strong> devem começar com a expressão <code>BREAKING CHANGE:</code> com duas linhas de separação do <em>body</em>-</p>
-            </div>  <!--page1-->
-
-        </div> <!--Col-md-8-->
-
-    </div><!--ROW-->
-</section> <!--"max-container-->
+<section id="max-container" class="container-fluid">
+</section>
 <br>
 <!-- LOAD FOOTER -->
 <hr>
-<section class="row">
-<div id="footer" class="col-md-12"></div>
-</section>
+<div id="footer"></div>
 <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/assets/js/funwithflags.js"></script>
@@ -142,5 +39,4 @@
     $("#footer").load("assets/canvas.html #footer");
 </script>
 </body>
-
 </html>
