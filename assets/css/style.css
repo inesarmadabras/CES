@@ -519,3 +519,7 @@ hr.canvas:after {
 .desc {
     margin-top: 10%
 }
+
+.well {
+    color: #000;
+}
