@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-   
+
     <title>Plataforma de Ideias</title>
     <script src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap core CSS -->
-    
+
     <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap-editable.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/jquery.upvote.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/sweetalert.css') }}">
@@ -28,13 +28,13 @@
     <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css') }}">
 
 
-    
 
 
 
 
 
-   
+
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -170,7 +170,7 @@
         $('.topic').upvote();
         $('.comment').upvote();
 
-        $.get("/data/islogged", function(data) {
+        $.get("data/islogged", function(data) {
             data.status == false ? console.log('not logged in') : console.log('logged in');
 
             $('.vote').on('click', function(e) {
