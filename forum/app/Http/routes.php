@@ -61,5 +61,5 @@ Route::get('data/users/{query?}', 'ModeratorsController@getUsers');
 
 Validator::extend('alpha_spaces', function($attribute, $value)
 {
-    return preg_match('"^[A-Za-z][A-Za-z0-9]*$"', $value);
+    return preg_match('/^[\pL\s]+$/u', $value);
 });

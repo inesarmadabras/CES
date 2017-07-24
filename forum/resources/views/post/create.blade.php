@@ -5,9 +5,8 @@
     <script src="{{ URL::asset('assets/js/typeahead.bundle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
 
-        <link rel="stylesheet" href="{{ URL::asset('assetssns/css/normalize.min.css') }}">
-                <link rel="stylesheet" href="{{ URL::asset('assetssns/css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('assetssns/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('/assets/css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css') }}">
 
 
     <script type="text/javascript">
@@ -41,79 +40,56 @@
         });
     </script>
 @endsection
-
+   
 @section('content')
     <h1>Criar Publicação</h1>
 
     <div class="bs-posts bs-posts-tabs" data-posts-id="togglable-tabs">
-        <ul id="myTabs" class="nav nav-tabs" role="tablist">
-            <li role="presentation"><a href="#text" role="tab" id="text-tab" data-toggle="tab" aria-controls="text">Publicar</a></li>
-        </ul>
-        <div id="myTabContent" class="tab-content" style="margin-top: 15px;">
+   <ul id="myTabs" class="nav nav-tabs" role="tablist">
+      <li role="presentation"><a href="#text" role="tab" id="text-tab" data-toggle="tab" aria-controls="text">Publicar</a>
+      </li>
+   </ul>
+   <div id="myTabContent" class="tab-content" style="margin-top: 15px;">
 
-            <div role="tabpanel" class="tab-pane fade in active" id="text" aria-labelledBy="text-tab">
+      <div role="tabpanel" class="tab-pane fade in active" id="text" aria-labelledBy="text-tab">
 
-                <div class="alert alert-warning" role="alert" align="center"><p>Esta plataforma de ideias é um espaço aberto a sugestões, de debate e troca de ideias, relacionadas com as aplicações MySNS, MySNS Tempos e MySNS Carteira. Antes de publicar, verifique se já existe alguma publicação semelhante à sua - utilize o campo de pesquisa no topo da página.</p>
+         <div class="alert alert-warning" role="alert" align="center">
+            <p>Esta plataforma de ideias é um espaço aberto a sugestões, de debate e troca de ideias, relacionadas com as aplicações MySNS, MySNS Tempos e MySNS Carteira. Antes de publicar, verifique se já existe alguma publicação semelhante à sua - utilize o campo de pesquisa no topo da página.</p>
 
-                <p>Em <b>Tópicos</b> poderá consultar todos os temas disponíveis.As sugestões mais votadas serão tidas em conta pelas nossas equipas de desenvolvimento. Este espaço não é uma rede social. Consulte os Termos e condições antes de comentar.</p>
+            <p>Em <b>Tópicos</b> poderá consultar todos os temas disponíveis.As sugestões mais votadas serão tidas em conta pelas nossas equipas de desenvolvimento. Este espaço não é uma rede social. Consulte os Termos e condições antes de comentar.</p>
 
-                <p>As sugestões mais votadas serão tidas em conta pelas nossas equipas de desenvolvimento. Este espaço <strong>não é uma rede social</strong>. Consulte os <strong>Termos e condições</strong> antes de comentar.</p></div>
+            <p>As sugestões mais votadas serão tidas em conta pelas nossas equipas de desenvolvimento. Este espaço <strong>não é uma rede social</strong>. Consulte os <strong>Termos e condições</strong> antes de comentar.</p>
+         </div>
 
-                {!! Form::open(['url' => 'posts', 'method' => 'POST']) !!}
-                <p>
-                    {!! Form::label('title', 'Título:') !!}
-                    {!! Form::text('title', null, ['class' => 'form-control', 'id' => 'title']) !!}
-                </p>
+         {!! Form::open(['url' => 'posts', 'method' => 'POST']) !!}
+         <p>
+            {!! Form::label('title', 'Título:') !!} {!! Form::text('title', null, ['class' => 'form-control', 'id' => 'title']) !!}
+         </p>
 
-                <p>
-                    {!! Form::label('text', 'Texto:') !!}
-                    {!! Form::textarea('text', null, ['class' => 'form-control', 'id' => 'text']) !!}
-                </p>
+         <p>
+            {!! Form::label('text', 'Texto:') !!} {!! Form::textarea('text', null, ['class' => 'form-control', 'id' => 'text']) !!}
+         </p>
 
-                <p>{!! Form::select('subreddit_id',array(
-                '2' => 'My SNS Carteira - Ajuda', 
-                '3' => 'My SNS Carteira - Bugs',
-                '4' => 'My SNS Carteira - Sugestões', 
-                '5' => 'My SNS Tempos - Ajuda',
-                '6' => 'My SNS Tempos - Bugs', 
-                '7' => 'My SNS Tempos - Sugestões',
-                '8' => 'My SNS  - Ajuda', 
-                '9' => 'My SNS  - Bugs',
-                '10' => 'My SNS  - Sugestões'
+         <p>{!! Form::select('subreddit_id',array( '2' => 'My SNS Carteira - Ajuda', '3' => 'My SNS Carteira - Bugs', '4' => 'My SNS Carteira - Sugestões', '5' => 'My SNS Tempos - Ajuda', '6' => 'My SNS Tempos - Bugs', '7' => 'My SNS Tempos - Sugestões', '8' => 'My SNS - Ajuda', '9' => 'My SNS - Bugs', '10' => 'My SNS - Sugestões' )) !!}</p>
 
-                 )) !!}</p>
-
-
-<p>
-                    <div id="remote">
-     <p>
-                   
-     </p>
-                   
-                    
         
+            <div id="remote">
 
-                <p>
-                    {!! Form::submit('Submeter', ['id' => 'submit', 'class' => 'btn btn-primary']) !!}
-                </p>
+               <p>
+                  {!! Form::submit('Submeter', ['id' => 'submit', 'class' => 'btn btn-primary']) !!}
+               </p>
 
-                {!! Form::close() !!}
+               {!! Form::close() !!}
             </div>
-        </div>
-
-
+      </div>
+@endsection
 
 
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <script>
-        $("#navs").load("assetssns/canvas.html nav");
-    </script>
-    <script>
-        $("#footer").load("assetssns/canvas.html #footer");
-    </script>
+
 
 
 

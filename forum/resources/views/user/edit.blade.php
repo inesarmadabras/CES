@@ -32,14 +32,17 @@
             </div>
         </div>
 
-             <div class="control-group">
-            <!-- Username -->
-            <label class="control-label"  for="profissao">Profissão</label>
-            <div class="controls">
-                <input type="text" id="profissao" name="profissao" placeholder="" value="{{ $user->profissao }}" class="form-control">
-                <p class="help-block"></p>
+         <div class="form-group">
+            {!! Form::label('profissao', 'Profissão') !!}
+            {!! Form::text('profissao', null, 
+            ['class'=>'form-control', 'placeholder'=>'Profissão']) !!}
             </div>
-        </div>
+
+             <div class="form-group">
+            {!! Form::label('empresa', 'Empresa') !!}
+            {!! Form::text('empresa', null, 
+            ['class'=>'form-control', 'placeholder'=>'Empresa']) !!}
+            </div>
 
         <div class="control-group">
             <!-- E-mail -->

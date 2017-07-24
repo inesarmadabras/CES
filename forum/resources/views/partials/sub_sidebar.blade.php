@@ -1,6 +1,6 @@
 <!-- Subreddit Search Well -->
 <div class="well" style="margin-top: 30px;">
-    <h4 class="black">Pesquisar em {{ $subreddit->name }}</h4>
+    <h4>Pesquisar em {{ $subreddit->name }}</h4>
     {!! Form::open(['route' => ['search', $subreddit]]) !!}
     <div id="custom-search-input">
         <div class="input-group col-md-12">

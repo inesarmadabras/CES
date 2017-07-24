@@ -9,19 +9,25 @@
             <div class="col-sm-3"><!--left col-->
 
                 <ul class="list-group">
-                    <li class="list-group-item text-muted">Profile</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Joined</strong></span> {{ $user->created_at->diffForHumans() }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Link Karma</strong></span> {{ $linkKarma }}</li>
-                    <li class="list-group-item text-right"><span class="pull-left"><strong>Comment Karma</strong></span> {{ $commentKarma }}</li>
-
+                    <li class="list-group-item text-muted">Perfil</li>
+                    
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Nome</strong></span> {{ $user->fullname }}
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Profissão</strong></span> {{ $user->profissao }}
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Empresa</strong></span> {{ $user->empresa }}
+                    </li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Conta</strong></span> {{ $user->created_at->diffForHumans() }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Publicações</strong></span> {{ $linkKarma }}</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Comentários</strong></span> {{ $commentKarma }}</li>
                 </ul>
 
             </div><!--/col-3-->
             <div class="col-sm-9">
 
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a href="#posts" data-toggle="tab">Posts</a></li>
-                    <li><a href="#comments" data-toggle="tab">Comments</a></li>
+                    <li class="active"><a href="#posts" data-toggle="tab">Publicações</a></li>
+                    <li><a href="#comments" data-toggle="tab">Comentários</a></li>
                 </ul>
 
                 <div class="tab-content">

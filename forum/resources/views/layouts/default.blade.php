@@ -9,39 +9,51 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+   
     <title>Plataforma de Ideias</title>
-    <script src="{{ URL::asset('/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap-editable.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/jquery.upvote.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/sweetalert.css') }}">
+    
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap-editable.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/jquery.upvote.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/sweetalert.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('eastgate/comment/css/comment.css') }}">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/sticky-footer-navbar.css') }}">
-    <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico " type="image/x-icon') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/css/normalize.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900') }}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/sticky-footer-navbar.css') }}">
+
+    <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico" type="image/x-icon') }}">
+
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/style.min.css') }}">
+
+    <link rel="stylesheet" href="{{ URL::asset('/assets/css/bootstrap.min.css') }}">
+
+
+    
+
+
+
+
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="{{ URL::asset('/assets/js/html5shiv.min.js') }}"></script>
-    <script src="{{ URL::asset('/assets/js/respond.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/html5shiv.min.js') }}"></script>
+    <script src="{{ URL::asset('assets/js/respond.min.js') }}"></script>
     <![endif]-->
 </head>
 
 <body>
     <div id="navs"></div>
-            <nav class="navbar navbar-inverse">
-                <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> Cidadão e Profissional de Saúde
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i> Plataforma de Ideias
-                </h1>
-            </nav>
+    <nav class="navbar navbar-inverse">
+        <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> Cidadão e Profissional de Saúde
+            <i class="fa fa-chevron-right" aria-hidden="true"></i> Plataforma de Ideias
+        </h1>
+    </nav>
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default">
@@ -57,21 +69,21 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="{{ Request::is('/ ') ? 'active ' : ' ' }}"><a href="{{ URL::action('HomeController@index') }}">Últimas publicações</a>
+                    <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="{{ URL::action('HomeController@index') }}">Últimas publicações</a>
                     </li>
-                    <li class="{{ Request::is('subreddit ') ? 'active ' : ' ' }}"><a href="{{ URL::action('SubredditController@index') }}">Tópicos</a>
+                    <li class="{{ Request::is('subreddit') ? 'active' : '' }}"><a href="{{ URL::action('SubredditController@index') }}">Tópicos</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if(Auth::check())
                     <!-- Só para mods -->
-                    <!--<li class="{{ Request::is('subreddit/create ') ? 'active ' : ' ' }}"><a href="{{ URL::action('SubredditController@create') }}"><span class="glyphicon glyphicon-plus"></span> Tópico</a></li>-->
-                    <li class="{{ Request::is('posts/create ') ? 'active ' : ' ' }}"><a href="{{ URL::action('PostsController@create') }}"><span class="glyphicon glyphicon-plus"></span> Publicação</a>
+                    <!--<li class="{{ Request::is('subreddit/create') ? 'active' : '' }}"><a href="{{ URL::action('SubredditController@create') }}"><span class="glyphicon glyphicon-plus"></span> Tópico</a></li>-->
+                    <li class="{{ Request::is('posts/create') ? 'active' : '' }}"><a href="{{ URL::action('PostsController@create') }}"><span class="glyphicon glyphicon-plus"></span> Publicação</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::getUser()->name }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ action('ProfilesController@edit ', Auth::getUser()->id) }}">Editar Perfil</a>
+                            <li><a href="{{ action('ProfilesController@edit', Auth::getUser()->id) }}">Editar Perfil</a>
                             </li>
                             <li><a href="{{ route('mysubreddits') }}">Meus Tópicos</a>
                             </li>
@@ -81,9 +93,9 @@
                         </ul>
                     </li>
                     @else
-                    <li class="{{ Request::is('auth/register ') ? 'active ' : ' ' }}"><a href="{{ url('auth/register') }}">Registo</a>
+                    <li class="{{ Request::is('auth/register') ? 'active' : '' }}"><a href="{{ url('auth/register') }}">Registo</a>
                     </li>
-                    <li class="{{ Request::is('auth/login ') ? 'active ' : ' ' }}"><a href="{{ url('auth/login') }}">Login</a>
+                    <li class="{{ Request::is('auth/login') ? 'active' : '' }}"><a href="{{ url('auth/login') }}">Login</a>
                     </li>
                     @endif
 
@@ -95,10 +107,10 @@
 
     <!-- Begin page content -->
     <div class="container">
-        @yield('content ')
+        @yield('content')
     </div>
 
-    <hr> <div id="footer"></div>
+    <div id="footer"></div>
 
 
 
@@ -116,7 +128,8 @@
     <script>
         $("#footer").load("/assets/canvas.html #footer");
     </script>
-    <script type="text/javascript" src="{{ URL::asset('assets/js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('/assets/js/bootstrap.min.js') }}"></script>
+     <script type="text/javascript" src="{{ URL::asset('/assets/js/funwithflags.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/js/jquery-ui.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('eastgate/comment/js/comment.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/js/bootstrap-editable.min.js') }}"></script>
@@ -131,15 +144,15 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script>
         // CSRF token setup for jQuery
-        var csrf_token = $('meta[name="csrf-token" ] ').attr('content ');
+        var csrf_token = $('meta[name="csrf-token"]').attr('content');
         $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
-            switch (options['type '].toLowerCase()) {
+            switch (options['type'].toLowerCase()) {
                 case "post":
                 case "delete":
                 case "put":
                     // add leading ampersand if `data` is non-empty
-                    if (options.data != ' ') {
-                        options.data += '& ';
+                    if (options.data != '') {
+                        options.data += '&';
                     }
                     // add _token entry
                     options.data += "_token=" + csrf_token;
@@ -149,74 +162,74 @@
 
         $.ajaxSetup({
             headers: {
-                'X-CSRF-TOKEN ': $('meta[name="csrf-token" ] ').attr('content ')
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
 
 
-        $('.topic ').upvote();
-        $('.comment ').upvote();
+        $('.topic').upvote();
+        $('.comment').upvote();
 
         $.get("/data/islogged", function(data) {
-            data.status == false ? console.log('not logged in ') : console.log('logged in ');
+            data.status == false ? console.log('not logged in') : console.log('logged in');
 
-            $('.vote ').on('click ', function(e) {
+            $('.vote').on('click', function(e) {
                 e.preventDefault();
                 var $button = $(this);
-                var postId = $button.data('post-id ');
-                var value = $button.data('value ');
+                var postId = $button.data('post-id');
+                var value = $button.data('value');
 
                 if (data.status == false) {
 
                     sweetAlert("Oops...", "Ainda não iniciou sessão!", "error");
 
                     window.setInterval(function() {
-                        $('a.upvote ').removeClass('upvote-on ');
-                        $('a.downvote ').removeClass('downvote-on ');
+                        $('a.upvote').removeClass('upvote-on');
+                        $('a.downvote').removeClass('downvote-on');
                     }, 500);
 
                 } else {
-                    $.post('votes ', {
+                    $.post('votes', {
                         postId: postId,
                         value: value
                     }, function(data) {
                         // success here
                     }).fail(function() {
                         sweetAlert("Oops...", "Algo correu mal...", "error");
-                    }, 'json ');
+                    }, 'json');
                 }
             });
 
-            $('.commentvote ').on('click ', function(e) {
+            $('.commentvote').on('click', function(e) {
                 e.preventDefault();
                 var $button = $(this);
-                var commentId = $button.data('comment-id ');
-                var value = $button.data('value ');
+                var commentId = $button.data('comment-id');
+                var value = $button.data('value');
 
                 if (data.status == false) {
                     sweetAlert("Oops...", "Ainda não iniciou sessão!", "error");
 
                     window.setInterval(function() {
-                        $('a.commentvote ').removeClass('upvote-on ');
-                        $('a.commentvote ').removeClass('downvote-on ');
+                        $('a.commentvote').removeClass('upvote-on');
+                        $('a.commentvote').removeClass('downvote-on');
                     }, 500);
 
                 } else {
-                    $.post('commentvotes ', {
+                    $.post('commentvotes', {
                         commentId: commentId,
                         value: value
                     }, function(data) {
                         // success here
                     }).fail(function() {
                         sweetAlert("Oops...", "Algo correu mal...", "error");
-                    }, 'json ');
+                    }, 'json');
                 }
             });
         });
 
-        $.fn.editable.defaults.mode = 'inline ';
+        $.fn.editable.defaults.mode = 'inline';
     </script>
-    @yield('scripts ')
+    @yield('scripts')
 
 
 </body>

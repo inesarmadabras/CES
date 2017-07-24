@@ -1,6 +1,6 @@
 <!-- Subreddit Search Well -->
 <div class="well" style="margin-top: 30px;">
-    <h4 class="black">Pesquisar</h4>
+    <h4>Pesquisar</h4>
     {!! Form::open(['route' => 'search_site']) !!}
     <div id="custom-search-input">
         <div class="input-group col-md-12">
@@ -16,8 +16,7 @@
 </div>
 
 <div class="well">
-    <h4 class="black">Plataforma de Ideias</h4>
+    <h4>Plataforma de Ideias</h4>
     <p></p>
-    <p>Consulte os <a href="https://comunidade.mysns.pt/termosecondicoes.html">Termos e Condições</a> antes de publicar</p>
+    <h5>Consulte os <a href="/termosecondicoes.html">Termos e Condições</a>  antes de publicar</h5>
 </div>
-

@@ -40,12 +40,15 @@ class AuthController extends Controller
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
+     * @return \Illuminate\Contracts\Validation\Vali3dator
      */
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255|alpha_spaces',
+            'name' => 'required|unique:users|max:255|alpha_dash',
+            'profissao' => 'required|max:255|alpha_spaces',
+            'fullname' => 'max:255|alpha_spaces',
+            'empresa' => 'max:255|alpha_dash',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);
@@ -61,6 +64,9 @@ class AuthController extends Controller
     {
         return User::create([
             'name' => $data['name'],
+            'profissao' => $data['profissao'],
+            'fullname' => $data['fullname'],
+            'empresa' => $data['empresa'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

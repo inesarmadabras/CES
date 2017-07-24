@@ -26,6 +26,13 @@
                 </div>
             </div>
 
+            <div class="form-group">
+            {!! Form::label('fullname', 'Nome Completo') !!}
+            {!! Form::text('fullname', null, 
+            ['class'=>'form-control', 'placeholder'=>'Nome Completo']) !!}
+            </div>
+
+
             <div class="control-group">
                 <!-- E-mail -->
                 <label class="control-label" for="email">E-mail</label>
@@ -33,6 +40,18 @@
                     <input type="text" id="email" name="email" placeholder="" value="{{ old('email') }}" class="form-control">
                     <p class="help-block"></p>
                 </div>
+            </div>
+
+            <div class="form-group">
+            {!! Form::label('profissao', 'Profissão') !!}
+            {!! Form::text('profissao', null, 
+            ['class'=>'form-control', 'placeholder'=>'Profissão']) !!}
+            </div>
+
+             <div class="form-group">
+            {!! Form::label('empresa', 'Empresa') !!}
+            {!! Form::text('empresa', null, 
+            ['class'=>'form-control', 'placeholder'=>'Empresa']) !!}
             </div>
 
             <div class="control-group">
