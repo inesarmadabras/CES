@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Serviço temporariamente indisponivel.</title>
+        <title>P?gina indispon?vel. </title>
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -40,7 +40,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Serviço temporariamente indisponivel.</div>
+                <div class="title">Pagina indisponivel.</div>
             </div>
         </div>
     </body>

@@ -1,19 +1,35 @@
-@extends('layouts/default')
+@title('Iniciar Sessão')
 
-@section('content')
+@extends('layouts.small')
 
-    {!! Form::open(['url' => 'auth/login']) !!}
-        <h2 class="form-signin-heading">Iniciar Sessão</h2>
-        <label for="inputEmail" class="sr-only">Endereço de e-mail</label>
-        <input type="email" name="email" class="form-control" value="{{ old('email') }}" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Palavra-passe</label>
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
+@section('small-content')
+    {!! Form::open(['route' => 'login.post']) !!}
+        @formGroup('username')
+            {!! Form::label('Nome de Utilizador') !!}
+            {!! Form::text('username', null, ['class' => 'form-control', 'required']) !!}
+            @error('username')
+        @endFormGroup
+
+        @formGroup('password')
+            {!! Form::label('Palavra-passe') !!}
+            {!! Form::password('password', ['class' => 'form-control', 'required']) !!}
+            @error('password')
+        @endFormGroup
+
+        <div class="form-group">
             <label>
-                <input type="checkbox" name="remember"> Lembrar
+                {!! Form::checkbox('remember') !!}
+                Lembrar
             </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-    {!! Form::close() !!}
 
-@stop
+        {!! Form::submit('Login', ['class' => 'btn btn-primary btn-block']) !!}
+        <a href="{{ route('login.github') }}" class="btn btn-default btn-block">
+            <i class="fa fa-github"></i> Iniciar sessão com o Github
+        </a>
+    {!! Form::close() !!}
+@endsection
+
+@section('small-content-after')
+    <a href="{{ route('password.forgot') }}" class="btn btn-link btn-sm btn-block">Esqueceu-se da sua palavra-passe?</a>
+@endsection

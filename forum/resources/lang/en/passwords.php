@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reminder Language Lines
+    | Password Reset Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'password' => 'Palavras-passe têm que ter pelo menos 6 caracteres e devem corresponder à confirmação.',
-    'user' => "Não conseguimos encontrar um utilizador com esse endereço de e-mail",
-    'token' => 'Este reset token é inválido.',
-    'sent' => 'Enviamos um e-mail com um link para atribuir uma nova palavra-passe',
-    'reset' => 'Mudança de palavra-passe confirmada!',
+    'password' => 'Palavra-passe tem que ter pelo menos 6 caracteres e coincidir com a confirmação.',
+    'reset' => 'A sua palavra-passe foi reposta!',
+    'sent' => 'Envia-mos um e-mail para repôr a sua palavra-passe!',
+    'token' => 'O código (token) de reposição de palavra-passe é inválido.',
+    'user' => "Não conseguimos encontrar o utilizador com esse endereço de e-mail :(",
 
 ];

@@ -1,2 +1,13 @@
-forum/storage
-
+forum/node_modules
+forum/public/build
+forum/public/fonts
+forum/public/storage
+forum/public/hot
+forum/public/mix-manifest.json
+forum/storage/*.key
+forum/vendor
+forum/Homestead.json
+forum/Homestead.yaml
+forum/.env
+forum/aliases
+forum/after.sh

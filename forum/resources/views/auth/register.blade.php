@@ -1,84 +1,54 @@
-@extends('layouts/default')
+@title('Registo')
 
-@section('content')
+@extends('layouts.small')
 
-    @if($errors->any())
-        <ul>
-            @foreach($errors->all() as $error)
-                <div class="alert alert-danger list-unstyled" role="alert">
-                    <li class="">{{ $error }}</li>
-                </div>
-            @endforeach
-        </ul>
-    @endif
+@section('small-content')
+    {!! Form::open(['route' => 'register.post']) !!}
+        @formGroup('name')
+            {!! Form::label('Nome') !!}
+            {!! Form::text('name', session('githubData.name'), ['class' => 'form-control', 'required', 'placeholder' => 'nome completo']) !!}
+            @error('name')
+        @endFormGroup
 
-    {!! Form::open(['url' => 'auth/register']) !!}
-        <fieldset>
-            <div id="legend">
-                <legend class="">Registo</legend>
-            </div>
-            <div class="control-group">
-                <!-- Username -->
-                <label class="control-label"  for="name">Nome de Utilizador</label>
-                <div class="controls">
-                    <input type="text" id="name" name="name" placeholder="" value="{{ old('name') }}" class="form-control">
-                    <p class="help-block">Nome de utilizador pode conter letras ou números, sem espaços</p>
-                </div>
-            </div>
+        @formGroup('email')
+            {!! Form::label('email') !!}
+            {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'exemplo@email.com']) !!}
+            @error('email')
+        @endFormGroup
 
-            <div class="form-group">
-            {!! Form::label('fullname', 'Nome Completo') !!}
-            {!! Form::text('fullname', null, 
-            ['class'=>'form-control', 'placeholder'=>'Nome Completo']) !!}
-            </div>
+        @formGroup('username')
+            {!! Form::label('Nome de Utilizador') !!}
+            {!! Form::text('username', session('githubData.username'), ['class' => 'form-control', 'required', 'placeholder' => 'nomedeutilizador']) !!}
+            @error('username')
+        @endFormGroup
 
-
-            <div class="control-group">
-                <!-- E-mail -->
-                <label class="control-label" for="email">E-mail</label>
-                <div class="controls">
-                    <input type="text" id="email" name="email" placeholder="" value="{{ old('email') }}" class="form-control">
-                    <p class="help-block"></p>
-                </div>
-            </div>
+        @if (! session()->has('githubData'))
+            @formGroup('password')
+                {!! Form::label('palavra-passe') !!}
+                {!! Form::password('password', ['class' => 'form-control', Session::has('githubData') ? null : 'required']) !!}
+                @error('password')
+            @endFormGroup
 
             <div class="form-group">
-            {!! Form::label('profissao', 'Profissão') !!}
-            {!! Form::text('profissao', null, 
-            ['class'=>'form-control', 'placeholder'=>'Profissão']) !!}
+                {!! Form::label('Confirmação de palavra-passe') !!} 
+                {!! Form::password('password_confirmation', ['class' => 'form-control', Session::has('githubData') ? null : 'required']) !!}
             </div>
+        @endif
 
-             <div class="form-group">
-            {!! Form::label('empresa', 'Empresa') !!}
-            {!! Form::text('empresa', null, 
-            ['class'=>'form-control', 'placeholder'=>'Empresa']) !!}
-            </div>
+        @formGroup('rules')
+            <label>
+                {!! Form::checkbox('rules') !!}
+                &nbsp; Concordo <a href="{{ route('rules') }}" target="_blank">com os termos e condições</a>
+            </label>
+            @error('rules')
+        @endFormGroup
 
-            <div class="control-group">
-                <!-- Password-->
-                <label class="control-label" for="password">Palavra-passe</label>
-                <div class="controls">
-                    <input type="password" id="password" name="password" placeholder="" class="form-control">
-                    <p class="help-block">Palavra-passe deve ter pelo menos 4 caracteres</p>
-                </div>
-            </div>
+        {!! Form::submit('Registar', ['class' => 'btn btn-primary btn-block']) !!}
 
-            <div class="control-group">
-                <!-- Password -->
-                <label class="control-label"  for="password_confirmation">Confirme a Palavra-passe</label>
-                <div class="controls">
-                    <input type="password" id="password_confirmation" name="password_confirmation" placeholder="" class="form-control">
-                    <p class="help-block">Por favor confirme a sua palavra-passe</p>
-                </div>
-            </div>
-
-            <div class="control-group">
-                <!-- Button -->
-                <div class="controls">
-                    <button class="btn btn-success">Registo</button>
-                </div>
-            </div>
-        </fieldset>
+        @if (! session()->has('githubData'))
+            <a href="{{ route('login.github') }}" class="btn btn-default btn-block">
+                <i class="fa fa-github"></i> Github
+            </a>
+        @endif
     {!! Form::close() !!}
-
-@stop
+@endsection
