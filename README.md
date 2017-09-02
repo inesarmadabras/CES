@@ -1,14 +1,11 @@
 # Comunidade MySNS
 
-### Forum:
-Made with Laravel
-
-#### How to Run
-##### Site
+### How to Run
+# Site
 clone the repo
 serve
 
-##### Forum
+# Forum
 ## Requisitos
 
 - [VirtualBox](https://www.virtualbox.org/)
@@ -20,10 +17,11 @@ serve
 
 1. Run `composer start`
 2. Run `vagrant up`
-3. SSH into your Vagrant box, go to `/home/vagrant/Code/forum` & run `composer setup`
-4. Add `192.168.10.10 forum.app` to `/etc/hosts` file
-5. Setup a working e-mail driver like [Mailtrap](https://mailtrap.io/)
-6. Setup Github authentication (see below)
+3. `vagrant ssh` e abrir `/home/vagrant/Code/forum` 
+4. Run `composer setup`
+4. Adicionar `192.168.10.10 forum.app` ao `/etc/hosts` file
+5. Setup a working e-mail (usei[Mailtrap](https://mailtrap.io/) )
+6. Setup Github auth (editar .env file)
 
 
 ## Admin
