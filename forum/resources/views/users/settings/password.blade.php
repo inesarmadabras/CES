@@ -2,6 +2,7 @@
 
 @extends('layouts.settings')
 
+
 @section('content')
     <div class="panel panel-default">
         <div class="panel-heading">{{ $title }}</div>

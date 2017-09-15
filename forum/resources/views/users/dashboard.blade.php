@@ -3,7 +3,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <h1>Welcome {{ Auth::user()->name() }}!</h1>
+    <h1>Bem-vindo {{ Auth::user()->name() }}!</h1>
     <hr>
 
     <div class="row">

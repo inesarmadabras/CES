@@ -27,7 +27,7 @@ class AuthTest extends BrowserKitTestCase
             ->check('rules')
             ->press('Register')
             ->seePageIs('/dashboard')
-            ->see('Welcome John Doe!');
+            ->see('Bem-vindo Admin!');
 
         $this->assertLoggedIn();
 

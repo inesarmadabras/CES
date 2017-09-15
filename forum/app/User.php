@@ -75,7 +75,8 @@ class User extends Authenticatable
     {
         $hash = md5(strtolower(trim($this->email)));
 
-        return "https://www.gravatar.com/avatar/$hash?s=$size";
+        return "assets/images/greenlogo.png";
+
     }
 
     public function intercomHash(): string

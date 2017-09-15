@@ -3,7 +3,6 @@ forum/public/build
 forum/public/fonts
 forum/public/storage
 forum/public/hot
-forum/public/mix-manifest.json
 forum/storage/*.key
 forum/vendor
 forum/Homestead.json

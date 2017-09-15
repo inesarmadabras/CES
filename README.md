@@ -19,7 +19,7 @@ serve
 2. Run `vagrant up`
 3. `vagrant ssh` e abrir `/home/vagrant/Code/forum` 
 4. Run `composer setup`
-4. Adicionar `192.168.10.10 forum.app` ao `/etc/hosts` file
+4. Adicionar `192.168.10.10 comunidade.app` ao `/etc/hosts` file
 5. Setup a working e-mail (usei[Mailtrap](https://mailtrap.io/) )
 6. Setup Github auth (editar .env file)
 

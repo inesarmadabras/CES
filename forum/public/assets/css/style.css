@@ -1655,7 +1655,7 @@ hr.canvas:after {
     .input-group-lg > input[type="month"].form-control,
     .input-group-lg > input[type="month"].input-group-addon,
     .input-group-lg > .input-group-btn > input[type="month"].btn,
-    .input-group-lg
+    .input-group-lg,
     input[type="month"] {
         line-height: 66px;
     }
@@ -2209,10 +2209,6 @@ tbody.collapse.in {
     color: #7b8a8b;
     white-space: nowrap;
 }
-.navbar-right {
-    padding-right: 5%;
-}
-
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     input[type="date"].form-control,
@@ -2890,7 +2886,6 @@ fieldset[disabled] .btn-info.focus {
     text-align: left;
     background-color: #fff;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     background-clip: padding-box;
@@ -4785,7 +4780,7 @@ a.thumbnail.active {
 
 .progress-bar {
     float: left;
-    width: 0%;
+    width: 0;
     height: 100%;
     font-size: 13px;
     line-height: 21px;
@@ -5692,7 +5687,6 @@ button.close {
     position: relative;
     background-color: #fff;
     border: 1px solid #999;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     background-clip: padding-box;
@@ -5963,7 +5957,6 @@ button.close {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -7320,7 +7313,6 @@ a.list-group-item-danger.active:focus {
     z-index: 1000;
     background: #fff;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }

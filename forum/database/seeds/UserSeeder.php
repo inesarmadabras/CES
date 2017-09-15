@@ -12,6 +12,7 @@ class UserSeeder extends Seeder
             'email' => 'nma-apps@spms.min-saude.pt',
             'username' => 'admin',
             'password' => bcrypt('password'),
+            'github_username' => 'nma-apps',
         ]);
     }
 }
