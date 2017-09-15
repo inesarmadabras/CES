@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="{{ App::getLocale() }}">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>Plataforma de Ideias</title>
-    <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico" type="image/x-icon') }}">
+     <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico" type="image/x-icon') }}">
+
     <!-- Bootstrap core CSS -->
-    <link href="{{ URL::asset('assets/css/style.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
+      <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
+      <link href="{{ URL::asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
+
     <script>
-    window.Laravel = {!!json_encode(['csrfToken' => csrf_token()]) !! };
+        window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
     </script>
+
     @include('layouts._favicons')
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body class="{{ $bodyClass ?? '' }}">
