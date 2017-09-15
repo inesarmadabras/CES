@@ -13,8 +13,8 @@
      <link rel="shortcut icon" href="{{ URL::asset('/assets/favicon.ico" type="image/x-icon') }}">
 
     <!-- Bootstrap core CSS -->
-      <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
-      <link href="{{ URL::asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+      <link href="{{ URL::asset('assets/css/style.min.css') }}" rel="stylesheet">
+      <link href="{{ URL::asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
 
     <script>
