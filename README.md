@@ -44,3 +44,11 @@ public/assets/canvas.html
 ### RoadMap:
 * Ajuda (animações svg) - eGuia de Tratamento
 * Área Programador (Documentação, GitHub)
+* Login Facebook
+* Notifications Controller
+* vote system https://github.com/jcc/laravel-vote
+* GitHub page
+* Contributing Guide
+* Code of conduct
+* License (gist)
+* Play store clone
