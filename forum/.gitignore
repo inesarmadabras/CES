@@ -11,3 +11,5 @@ Homestead.yaml
 /aliases
 /after.sh
 *.log
+.idea
+.vargrant

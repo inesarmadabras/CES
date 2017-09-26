@@ -1,0 +1,4 @@
+servidor ubuntu:
+sudo apt-get update
+sudo apt-get install composer nginx mysql-server php-mysql
+# colocar a pass de root mysql
