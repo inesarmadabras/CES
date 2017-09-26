@@ -10,3 +10,4 @@ Homestead.yaml
 .env
 /aliases
 /after.sh
+*.log
