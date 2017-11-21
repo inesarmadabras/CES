@@ -23,9 +23,9 @@ class UserTest extends TestCase
     /** @test */
     public function it_can_find_by_email_address()
     {
-        $this->createUser(['email' => 'nma-apps@spms.min-saude.pt']);
+        $this->createUser(['email' => 'servicedesk@spms.min-saude.pt']);
 
-        $this->assertInstanceOf(User::class, User::findByEmailAddress('nma-apps@spms.min-saude.pt'));
+        $this->assertInstanceOf(User::class, User::findByEmailAddress('servicedesk@spms.min-saude.pt'));
     }
 
     /** @test */

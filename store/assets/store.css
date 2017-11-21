@@ -1,0 +1,189 @@
+#cover {
+    background: #262626;
+    mix-blend-mode: normal;
+    opacity: 0.66;
+    height:200px;
+}
+/*/ Other /*/
+
+/* descrição pag */
+#topdesc {
+    /* card */
+    position: absolute;
+    vertical-align: middle;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 5px 15px 5px 15px;
+    margin-left:45%;
+    align-items:center;
+    margin-top: -10px;
+
+}
+#pagelogo {
+    /* Mask */
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 2px solid white;
+    margin-left:45%;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    background: #4A4A4A;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/*COOL EFECT*/
+
+.container {
+    margin-top: 5%;
+}
+
+.post {
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    height:200px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 400ms ease;
+}
+
+.post:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.post img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    transition: all 400ms ease;
+}
+
+.post:hover img {
+    height: 100%;
+    transition: all 400ms ease;
+}
+
+.post:hover .avatar {
+    /*Disappear or not to disappear? That is the question.*/
+    /*transform: scale(0);*/
+    transition: all 400ms ease;
+}
+
+.post:hover .fa {
+    transform: scale(1);
+    transition: all 400ms ease;
+}
+
+.post:hover p {
+    color: #fff;
+    transition: all 400ms ease;
+}
+
+.post:hover button {
+    color: #fff;
+    margin-top: -0px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 400ms ease;
+}
+
+
+.post:hover .app-name {
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+
+
+.content {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 30%;
+}
+
+.post-content {
+    position: relative;
+    left: -50%;
+    margin-top: -20% !important;
+    top: 0;
+}
+
+.avatar {
+    background: #eee;
+    height: 95px !important;
+    width: 95px !important;
+    border-radius: 50%;
+    margin-top: -100% !important;
+    border: solid 3px #fff;
+}
+
+p {
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+
+a {
+    font-size: 11px;
+    color: #474747;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+#page1 a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+button {
+    background: #67a037;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 900;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 0;
+    transition: all 400ms ease;
+}
+
+.bold-caps {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.thin {
+    font-size: 16px;
+    margin-top: -30px;
+}
+
+
+.rating {
+    margin-top: 80%;
+    margin-left: -100% !important;
+}
+
+.fa {
+    color: #FFDE51;
+    transform: scale(0);
+    transition: all 400ms ease;
+}
+
+
+.btn-success{
+    color:white;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    text-transform: uppercase;
+}

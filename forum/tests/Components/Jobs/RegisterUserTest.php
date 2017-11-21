@@ -16,7 +16,7 @@ class RegisterUserTest extends TestCase
     /** @test */
     public function we_can_create_a_user()
     {
-        $job = new RegisterUser('admin', 'nma-apps@spms.min-saude.pt', 'admin', '', 'password');
+        $job = new RegisterUser('admin', 'servicedesk@spms.min-saude.pt', 'admin', '', 'password');
 
         $this->assertInstanceOf(User::class, $job->handle($this->app->make(Hasher::class)));
     }
@@ -26,10 +26,10 @@ class RegisterUserTest extends TestCase
     {
         $this->expectException(CannotCreateUser::class);
 
-        $job = new RegisterUser('admin', 'nma-apps@spms.min-saude.pt', 'admin', '', 'password');
+        $job = new RegisterUser('admin', 'servicedesk@spms.min-saude.pt', 'admin', '', 'password');
         $job->handle($this->app->make(Hasher::class));
 
-        $job = new RegisterUser('admin', 'nma-apps@spms.min-saude.pt', 'admin', '', 'password');
+        $job = new RegisterUser('admin', 'servicedesk@spms.min-saude.pt', 'admin', '', 'password');
         $job->handle($this->app->make(Hasher::class));
     }
 
@@ -38,10 +38,10 @@ class RegisterUserTest extends TestCase
     {
         $this->expectException(CannotCreateUser::class);
 
-        $job = new RegisterUser('admin', 'nma-apps@spms.min-saude.pt', 'admin', '', 'password');
+        $job = new RegisterUser('admin', 'servicedesk@spms.min-saude.pt', 'admin', '', 'password');
         $job->handle($this->app->make(Hasher::class));
 
-        $job = new RegisterUser('admin', 'nma-apps@spms.min-saude.pt', 'admin', '', 'password');
+        $job = new RegisterUser('admin', 'servicedesk@spms.min-saude.pt', 'admin', '', 'password');
         $job->handle($this->app->make(Hasher::class));
     }
 }

@@ -9,7 +9,7 @@ class UserSeeder extends Seeder
     {
         factory(User::class)->create([
             'name' => 'admin',
-            'email' => 'nma-apps@spms.min-saude.pt',
+            'email' => 'servicedesk@spms.min-saude.pt',
             'username' => 'admin',
             'password' => bcrypt('password'),
             'github_username' => 'nma-apps',

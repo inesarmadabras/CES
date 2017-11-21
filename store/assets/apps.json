@@ -1,0 +1,13 @@
+{ "apps": [
+  { "name": "Aplicação Fofa",
+    "autor": "HeyPoo",
+    "category": "Aplicação Gratuita",
+    "logo": "http://barcampdeland.org/images/speaker_rayvillalobos.jpg",
+    "linkandroid": "http://iviewsource.com",
+    "linkios": "http://iviewsource.com",
+    "description": "lerolero lero.",
+    "screenshot1": "http://barcampdeland.org/images/speaker_rayvillalobos.jpg",
+    "screenshot2": "http://barcampdeland.org/images/speaker_rayvillalobos.jpg",
+    "screenshot3": "http://barcampdeland.org/images/speaker_rayvillalobos.jpg"
+  }
+]}

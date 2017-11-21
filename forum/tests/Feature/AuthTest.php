@@ -20,7 +20,7 @@ class AuthTest extends BrowserKitTestCase
 
         $this->visit('/register')
             ->type('admin', 'name')
-            ->type('nma-apps@spms.min-saude.pt', 'email')
+            ->type('servicedesk@spms.min-saude.pt', 'email')
             ->type('admin', 'username')
             ->type('password', 'password')
             ->type('password', 'password_confirmation')
@@ -159,7 +159,7 @@ class AuthTest extends BrowserKitTestCase
         $this->createUser();
 
         $this->visit('/password/reset')
-            ->type('nma-apps@spms.min-saude.pt', 'email')
+            ->type('servicedesk@spms.min-saude.pt', 'email')
             ->press('Send Password Reset Link')
             ->see('We have e-mailed your password reset link!');
     }
