@@ -14,6 +14,15 @@ h5,
 h6 {
     font-family: Raleway, sans-serif
 }
+
+p {
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 1px;
+
+}
+
 p a {
     text-decoration: underline
 }
@@ -232,7 +241,8 @@ blockquote {
 .top-center {
     margin: auto
 }
-p {
+p,
+li {
     color: #88898D;
     text-align: justify
 }
