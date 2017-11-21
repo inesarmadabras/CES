@@ -5,63 +5,81 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My SNS Community</title>
+    <title>MySNS Comunidade</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/normalize.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/store/assets/store.css">
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <!-- LOAD NAVBAR -->
-    <div id="navs"></div>
-    <!-- IMAGE HEADER-->
-    <nav class="navbar navbar-inverse">
-        <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> MySNS Recommended Apps
-            </h1>
-    </nav>
-    <br>
-    <br>
-    <!--MAIN CONTENT-->
-    <!--MAIN CONTENT-->
-    <div id="max-container">
-        <div id="page1" class="container">
-            <p>
-                <b>MySNS Recommended Apps</b> is our opportunity to share mobile applications developed by citizens and other organizations that, in our view, play a significant role in bringing citizens closer to their health.
-                <br>The content and performance of the recommended applications are entirely the responsibility of the manufacturer.
-                <br>If you would like to see your application published on this page, send us an email to <u>nma@spms.min-saude.pt</u> with the following information:
-                <br>- Application name
-                <br>- Description
-                <br>- Author / Developer
-                <br>- Link to Apple App Store / Google Play Store
-                <br><br>
-                <b>Technical Description:</b>
-                <br>- What technologies were used?
-                <br>- What measures does the app take to provide security of user input and to authenticate the user?
-                <br>- What steps have been taken to validate the operation of the app on each platform?
-                <br>
-                <br> The recommended applications should comply with the <a href="https://c.ymcdn.com/sites/echalliance.com/resource/resmgr/Docs/eHealth_week/SeconddraftmHealthassessment.pdf">'EU guidelines on assessment of the reliability of mobile health applications'</a> and the <a href="https://ec.europa.eu/digital-single-market/en/news/code-conduct-privacy-mhealth-apps-has-been-finalised">Code of Conduct on privacy for mobile health applications</a>, also defined by the EC.
-            </p>
+<!-- LOAD NAVBAR -->
+<div id="navs"></div>
+<!-- IMAGE HEADER-->
+<nav class="navbar navbar-inverse">
+    <h1 class="titlebar"><i class="fa fa-chevron-right" aria-hidden="true"></i> MySNS Recommended Apps
+    </h1>
+</nav>
+
+<!--MAIN CONTENT-->
+<div>
+    <div class="post">
+        <div class="content">
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="post-content">
+                <img class="avatar" src="/assets/images/store/logo.png">
+                <p class="app-name"> MySNS Recommended Apps</p>
+
+            </div>
+
         </div>
+        <img src="/assets/images/store/back.jpg">
     </div>
+    <div id="page1" class="container">
+        <p>
+            <b>MySNS Recommended Apps</b> is our opportunity to share mobile applications developed by citizens and other organizations that, in our view, play a significant role in bringing citizens closer to their health.
+            <br>The content and performance of the recommended applications are entirely the responsibility of the manufacturer.
+        <p>
+        If you would like to see your application published on this page ,fill out the form below.
+
+        </p>
+
+        <p><a href="https://estudo.min-saude.pt/limesurvey/index.php/668518?lang=pt" class="btn btn-success" role="button">Form</a>
+        </p>
+
+        <p> The recommended applications should comply with the <a href="https://c.ymcdn.com/sites/echalliance.com/resource/resmgr/Docs/eHealth_week/SeconddraftmHealthassessment.pdf">'EU guidelines on assessment of the reliability of mobile health applications'</a> and the <a href="https://ec.europa.eu/digital-single-market/en/news/code-conduct-privacy-mhealth-apps-has-been-finalised">Code of Conduct on privacy for mobile health applications</a>, also defined by the EC.
+        </p>
+
     </div>
-    <br>
-    <br>
-    <!-- LOAD FOOTER -->
-    <hr>
-    <div id="footer"></div>
-    <script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/js/funwithflags.js"></script>
-    <script>
+
+
+</div>
+<br>
+<br>
+<!-- LOAD FOOTER -->
+<hr>
+<div id="footer"></div>
+<script type="text/javascript" src="/assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/funwithflags.js"></script>
+<script>
     $("#navs").load("canvas.html nav");
-    </script>
-    <script>
+</script>
+<script>
     $("#footer").load("canvas.html #footer");
-    </script>
+</script>
 </body>
 
 </html>
