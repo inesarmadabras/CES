@@ -121,6 +121,17 @@
     border: solid 3px #fff;
 }
 
+@media only screen and (max-width: 768px) {
+    .avatar {
+        background: #eee;
+        height: 60px !important;
+        width: 60px !important;
+        border-radius: 50%;
+        margin-top: -100% !important;
+        border: solid 3px #fff;
+    }
+}
+
 p {
     position: relative;
     font-weight: 300;
