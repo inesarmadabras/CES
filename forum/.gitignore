@@ -11,4 +11,4 @@ Homestead.yaml
 /after.sh
 *.log
 .idea
-.vargrant
+.vagrant
